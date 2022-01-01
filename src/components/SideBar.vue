@@ -4,10 +4,10 @@
  * @Author: Charles Guo
  * @Date: 2021-12-26 21:42:54
  * @LastEditors: Charles Guo
- * @LastEditTime: 2021-12-26 22:12:15
+ * @LastEditTime: 2022-01-01 23:23:17
 -->
 <template>
-  <div>sidebar</div>
+  <div class="sidebar">sidebar</div>
 </template>
 
 <script>
@@ -15,4 +15,13 @@ import { defineComponent } from "vue";
 export default defineComponent({});
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.sidebar {
+  padding: 2rem 1rem;
+  color: #fff;
+  background: #202020;
+
+  width: 18rem;
+  text-align: left;
+}
+</style>

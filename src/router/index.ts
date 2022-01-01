@@ -4,23 +4,23 @@ import layout from "@/layout/Index.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
+    name: "Posts",
     component: layout,
     children: [
       {
         path: "",
-        component: () => import("../views/ArticleList.vue"),
+        component: () => import("../views/Posts.vue"),
       },
     ],
   },
   {
-    path: "/article",
-    name: "Article",
+    path: "/post/:id",
+    name: "Post",
     component: layout,
     children: [
       {
         path: "",
-        component: () => import("../views/Article.vue"),
+        component: () => import("../views/Post.vue"),
       },
     ],
   },
